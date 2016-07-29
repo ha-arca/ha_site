@@ -1,0 +1,490 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link rel="icon" href="">
+<title></title>
+<script language="javascript" type="text/javascript" src="../common/js/jquery.js" /></script>
+<script language="javascript" type="text/javascript" src="../common/js/jquery-ui.min.js" /></script>
+<script language="javascript" type="text/javascript" src="../common/js/common.js" /></script>
+<link rel="stylesheet" type="text/css" href="../common/css/default.css" />
+<link rel="stylesheet" type="text/css" href="../common/css/common.css" />
+<link rel="stylesheet" type="text/css" href="../common/css/faq.css" />
+
+<script language="javascript" type="text/javascript" src="../common/js/jquery.scrollFollow.js" /></script>
+<script type="text/javascript">
+	$(document).ready( function (){
+			$('a[href^=#]').click(function() {
+			  var speed = 600;// ミリ秒
+			  var href= $(this).attr("href");
+			  var target = $(href == "#" || href == "" ? 'html' : href);
+			  var position = target.offset().top - 147;
+			  
+				var body = 'body, html';
+				if (navigator.userAgent.match(/MSIE/)) {
+				    /*IE6.7.8.9.10*/
+				    body = 'html';
+				}
+				$(body).animate({scrollTop:position}, speed, 'swing');
+			  return false;
+			});
+			$('.reserv').scrollFollow( {
+				speed: 1000,				
+				offset: 177
+			} );				
+		    $(".quest").click(
+		    	function(){
+		    		$(this).next().stop().animate({height: "toggle", display: "block"},300);
+		    		$(this).toggleClass("slc");
+		    		$(window).resize();
+		    	},
+		    	function(){		    		
+		    		$(this).next().stop().animate({height: "toggle", display: "none"},300);
+		    		$(this).toggleClass("slc");
+		    		$(window).resize();
+		    	}		    	
+		    );
+			$('.hide').toggle();
+
+		});	 
+		function hdPdown(){
+		  hdSelect = document.hdForm.hdPmenu.selectedIndex;
+		  if(document.hdForm.hdPmenu.options[hdSelect].value !=""){
+		      window.open(document.hdForm.hdPmenu.options[hdSelect].value);
+		  }
+		  return false;
+		}
+</script>
+</head>
+<body>
+<div id="wrapper">
+    <!-- HEADER -->
+    <div id="header2">
+      <div class="bg_02">
+        <div class="head_top p2">
+        	<h1><a href="../"><img src="../common/images/logo_03.png" alt="" class="spChange"/></a></h1>
+            <div class="menu_top_01">
+            	<ul>
+                	<li><a href="../room/">Guest room</a></li>
+                    <li><a href="../plan/">Plan</a></li>
+                    <li><a href="../lounge/">Lounge</a></li>
+                    <li><a href="../facility/">Facility</a></li>
+                    <li><a href="../shuttlebus/">Shuttle bus</a></li>
+                    <li><a href="../access/">Access</a></li>
+                    <li class="off">Travel spots</li>
+                    <li class="off">E-book</li>
+                    <li><a href="../recruit/">Recruit</a></li>
+                    <div class="clear"></div>
+                </ul>
+            </div>
+            <!-- SP - MENU -->
+                <div id="menu">
+                	<div class="bg_btn_menu">
+                        <div id="btn_menu">
+                            <span class="cl_01"></span><span class="cl_01"></span><span class="cl_01"></span><span class="cl_01">menu</span>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                    <ul class="menu_top_01 color_02 bg_p2">                
+                        	<li><a href="../room/">Guest room</a></li>
+                            <li><a href="../plan/">Plan</a></li>
+                            <li><a href="../lounge/">Lounge</a></li>
+                            <li><a href="../facility/">Facility</a></li>
+                            <li><a href="../shuttlebus/">Shuttle bus</a></li>
+                            <li><a href="../access/">Access</a></li>
+                            <li class="off">Travel spots</li>
+                            <li class="off">E-book</li>
+                            <li><a href="../recruit/">Recruit</a></li>
+                        <div class="clear"></div>
+                        <div class="line_01"></div>
+                    </ul>
+                    <div class="clear"></div>
+                    <div class="clear"></div>
+                </div>
+                <!-- /SP - MENU -->
+        </div>
+        <div class="clear"></div>
+        </div>
+        <div class="menu_02">
+        	<div class="cont_m2">
+                <ul class="list">
+                    <li><a href="../top.html">Home</a></li>
+                    <li><a href="#">English</a></li>
+                    <li><a href="../../faq/">Japanese</a></li>
+                    <li  class="fix_menu_01 active"><a>Q&A</a></li>
+                    <li class="img_01"><img src="../common/images/menu_02.png" width="295" alt="" /></li>
+                </ul>   
+                <div class="clear"></div> 
+            </div>       
+        </div>
+    </div>
+    <!-- /HEADER -->
+    <!-- CONTAINER -->
+    <div id="container_page">
+		<!-- SLIDE TOP -->
+        <div id="slidetop_01">
+        	
+        </div>
+        <div class="content">
+        	<div id="main" class="main"><!--main-->
+            <div class="inner faq">
+            	<div class="tit_01">
+                    <div class="ct_tit">
+                        <h2>Q&A</h2>
+                        <p>faq</p>                          
+                    </div>
+                </div>
+                <div class="box1">
+                	<div class="tit"><p>Here are answers to the questions most frequently asked by our guests.</p></div>
+                    <div class="quest">
+                    	<h3>Where is aboard buses in Haneda airport?</h3> </div>
+                    <div class="hide Darticle">We can pick you up from international terminal, terminal 1, terminal 2.
+                        <br />Please view the time and place in detail at [<a href="../shuttlebus/" target="_blank">shuttle bus</a>]</div>
+                    <div class="quest">
+                        <h3>Where is the nearest station?</h3> </div>
+                    <div class="hide Darticle">Around 3 minutes walking distance to Anamoriinari-Station of Keihinkyukou-line. Around 10 minutes walking distance to Tenkuubashi-Station of Tokyo monorail.
+                        <br />※We put timetable at the front desk.</div>                        
+                    <div class="quest">
+                        <h3>Is there a convenience store nearby?</h3> </div>
+                    <div class="hide Darticle">Front of hotel: Circle K Sunkus
+                        <br />Walking about 3 minutes to Lawson
+                        <br />Walking about 3 minutes to Family mark
+                        <br />Walking about 10 minutes to Seven-Eleven
+                        <br />※We put map at the front desk.
+                        <br />※View map <a href="../access/" target="_self">here</a></div>
+                    <div class="quest">
+                        <h3>Can you use internet in the room?</h3> </div>
+                    <div class="hide Darticle">All rooms are equipped high-speed LAN line. We are using optical line in hotel, and VDSL into guest rooms.
+                        <br />※LAN cable is available in all guest rooms. You can use wifi in hotel.</div>
+                    <div class="quest">
+                        <h3>How much do you charge for a late checkout?</h3> </div>
+                    <div class="hide Darticle">Extra fee is as below.
+                        <br />30% of accommodation cost if 3 hours late.
+                        <br />50% of accommodation cost if 6 hours late.
+                        <br />100% of accommodation cost if over 6 hours late.</div>
+                    <div class="quest">
+                        <h3>About cancellation charges</h3> </div>
+                    <div class="hide Darticle">Base on accommodation cost, cancellation charges are as below:
+                        <br />The days before your arrival date is 20%
+                        <br />On your arrival date is 80%
+                        <br />No contact is 100%
+                        <br />※Cancellation charges may be required if group cancel due to the difference rules.</div>
+                    <div class="quest">
+                        <h3>About check-in and check-out</h3> </div>
+                    <div class="hide Darticle">Check-in any time after 14:00
+                        <br />Check-out by 11:00
+                        <br />(※Each package has a different time schedule or late check-out free. Please contact us.)</div>
+                    <div class="quest">
+                        <h3>About non-smoking room</h3> </div>
+                    <div class="hide Darticle">Please request non-smoking room when booking.
+                        <br /> ※Depending on the room vacancy of the day, we may not be able to meet your request. Thank you for your understanding in advance.</div>
+                    <div class="quest">
+                        <h3>About parking area</h3> </div>
+                    <div class="hide Darticle">Hotel’s coin parking area capacity is 9 vehicles.
+                        <br />Please contact us before using it. If you do not book in advance, you can not use.
+                        <br /> <span style="color:#F00;">※If parking area was full, please use nearby parking area. Hotel will not pay for this fee.</span>
+                        <br />※On holidays such as GW, Christmas, End-New Year days, Sunday, parking area is crowded. we recommend using public transport. 
+                        <br />※You can refer coin parking times at <a href="http://times-info.net/?rf=pc" target="_blank"> here</a> but please book space with hotel by phone.
+                        <br />Tel: 03-5735-2525</div>
+                    <div class="quest">
+                        <h3>Sending luggage in advance via home-delivery service</h3> </div>
+                    <div class="hide Darticle">Luggage sent to hotel by Delivery Service will be kept at hotel Front Desk. 
+                        <br />Please write the reservation name, name when sending luggage.
+                        <br />We will give back to you at check-in time.
+                        <br />※You also can use delivery service to send luggage from hotel by <a href="http://www.kuronekoyamato.co.jp/top.html" target="_blank">Yamato transport service.</a>
+                        <br />If you want the other services, please contact us.</div>
+                    <div class="quest">
+                        <h3>Using room for over 3 persons</h3> </div>
+                    <div class="hide Darticle">We provide rooms for 2 persons (double room or twin room).
+                        <br />There is no extra bed or sofa bed.
+                        <br />*If you have small children or want any extra bed, please contact us.</div>
+                    <div class="quest">
+                        <h3>Left luggage in the room.</h3> </div>
+                    <div class="hide Darticle">Any left luggage will be kept within a specific period of time. Please contact us to claim it back. After that period, we take it to the Police Service.</div>
+                    <div class="quest">
+                        <h3>About bank transfer payment</h3> </div>
+                    <div class="hide Darticle">Please contact us for payment in advance. 
+                        <br />Please effect transfer 5 working days (excluding Saturday and Sunday) <span style="color:#F00;">BEFORE arrive to hotel</span>
+                        <br />If you do not meet deadline, please FAX the transfer confirmation to hotel.</div>
+                    <div class="quest">
+                        <h3>About payment</h3> </div>
+                    <div class="hide Darticle">Please pay upon check-in as there are early checkout customers. Thanks for your understanding.</div>
+					<div class="quest">
+                         <h3>Are there restaurants nearby the hotel?</h3>
+                    </div>
+                    <div class="hide Darticle">Across Kanjou Route 8 front of the hotel, there are Guydon shop and Ramen shop open until to 2:00AM. Hotel front desk can recommend you seafood restaurants in Haneda that open from afternoon to 21:00PM. Should there be any queries about food shop, you can always contact us.</div>
+                </div>
+               	<div class="clear"></div>
+            </div>
+            </div><!--main-->
+            <div id="sideWrap">
+            <div id="side">
+            <div class="sidebar fixnav">
+            	<div class="box bx_01">
+                	 <div class="pos_rel">
+                            <div class="pos_abs" id="link_book"></div>
+                    </div>
+                	 <div class="tit_sb"><img src="../common/images/sb_tit_01.png" alt="" width="100"/></div>
+                     <div class="inner_sb">
+                     	<div class="tit_sub">Reservation date</div>
+                        <div class="row_sb">                      
+                            <select>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                                <option value="13">13</option>
+                                <option value="14">14</option>
+                                <option value="15">15</option>
+                                <option value="16">16</option>
+                                <option value="17">17</option>
+                                <option value="18">18</option>
+                                <option value="19">19</option>
+                                <option value="20">20</option>
+                                <option value="21">21</option>
+                                <option value="22">22</option>
+                                <option value="23">23</option>
+                                <option value="24">24</option>
+                                <option value="25">25</option>
+                                <option value="26">26</option>
+                                <option value="27">27</option>
+                                <option value="28">28</option>
+                                <option value="29">29</option>
+                                <option value="30">30</option>
+                                <option value="31">31</option>
+                            </select>
+                            <select>
+                                <option value="2016/03/01">03/2016</option>
+                                <option value="2016/04/01">04/2016</option>
+                                <option value="2016/05/01">05/2016</option>
+                                <option value="2016/06/01">06/2016</option>
+                                <option value="2016/07/01">07/2016</option>
+                                <option value="2016/08/01">08/2016</option>
+                            </select>
+                             <a href="#"><img src="../common/images/icon_cal.gif" width="17" alt="" /></a>
+                        </div>
+                         
+                        <div class="row_sb">
+                        	<span>from</span>
+                            <select>
+                                <option value="1">1day</option>
+                                <option value="2">2day(s)</option>
+                                <option value="3">3day(s)</option>
+                                <option value="4">4day(s)</option>
+                                <option value="5">5day(s)</option>
+                                <option value="6">6day(s)</option>
+                                <option value="7">7day(s)</option>
+                                <option value="8">8day(s)</option>
+                                <option value="9">9day(s)</option>
+                                <option value="10">10day(s)</option>
+                                <option value="11">11day(s)</option>
+                                <option value="12">12day(s)</option>
+                                <option value="13">13day(s)</option>
+                                <option value="14">14day(s)</option>
+                                <option value="15">15day(s)</option>
+                                <option value="16">16day(s)</option>
+                                <option value="17">17day(s)</option>
+                                <option value="18">18day(s)</option>
+                                <option value="19">19day(s)</option>
+                                <option value="20">20day(s)</option>
+                                <option value="21">21day(s)</option>
+                                <option value="22">22day(s)</option>
+                                <option value="23">23day(s)</option>
+                                <option value="24">24day(s)</option>
+                                <option value="25">25day(s)</option>
+                                <option value="26">26day(s)</option>
+                                <option value="27">27day(s)</option>
+                                <option value="28">28day(s)</option>
+                                <option value="29">29day(s)</option>
+                                <option value="30">30day(s)</option>
+                                <option value="31">31day(s)</option>
+                            </select>                            
+ 
+                        </div>
+                        <div class="row_sb">                      
+                            <select>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                                <option value="13">13</option>
+                                <option value="14">14</option>
+                                <option value="15">15</option>
+                                <option value="16">16</option>
+                                <option value="17">17</option>
+                                <option value="18">18</option>
+                                <option value="19">19</option>
+                                <option value="20">20</option>
+                                <option value="21">21</option>
+                                <option value="22">22</option>
+                                <option value="23">23</option>
+                                <option value="24">24</option>
+                                <option value="25">25</option>
+                                <option value="26">26</option>
+                                <option value="27">27</option>
+                                <option value="28">28</option>
+                                <option value="29">29</option>
+                                <option value="30">30</option>
+                                <option value="31">31</option>
+                            </select>
+                            <select>
+                                <option value="2016/03/01">03/2016</option>
+                                <option value="2016/04/01">04/2016</option>
+                                <option value="2016/05/01">05/2016</option>
+                                <option value="2016/06/01">06/2016</option>
+                                <option value="2016/07/01">07/2016</option>
+                                <option value="2016/08/01">08/2016</option>
+                            </select>
+                             <a href="#"><img src="../common/images/icon_cal.gif" width="17" alt="" /></a>
+                        </div>
+                        <div class="tit_sub">Number of guests</div>
+                        <div class="row_sb">                        	
+                            <select>
+                                <option value="1">1person</option>
+                                <option value="2">2person(s)</option>
+                                <option value="3">3person(s)</option>
+                                <option value="4">4person(s)</option>
+                                <option value="5">5person(s)</option>
+                                <option value="6">6person(s)</option>
+                                <option value="7">7person(s)</option>
+                                <option value="8">8person(s)</option>
+                                <option value="9">9person(s)</option>
+                                <option value="10">10person(s)</option>
+                            </select>
+                            <span>room</span>
+                        </div>
+                        <div class="tit_sub">Number of rooms</div>
+                        <div class="row_sb">                        	
+                            <select>
+                                <option value="1">1room</option>
+                                <option value="2">2room(s)</option>
+                                <option value="3">3room(s)</option>
+                                <option value="4">4room(s)</option>
+                                <option value="5">5room(s)</option>
+                                <option value="6">6room(s)</option>
+                                <option value="7">7room(s)</option>
+                                <option value="8">8room(s)</option>
+                                <option value="9">9room(s)</option>
+                                <option value="10">10room(s)</option>                                 
+                            </select>                             
+                        </div>
+                        <div class="tit_sub">Select plan</div>
+                        <div class="row_sb">                        	
+                            <select>
+                                <option selected="selected" value="1">All plans</option>
+                            </select>                             
+                        </div>
+                        <div class="tit_sub">Search</div>
+                        <div class="row_sb">                        	
+                            <input type="radio" name="" value="">By staying plan<br>
+                            <input type="radio" name="" value="">By room type<br>
+                           	<input type="radio" name="" value="">By price                             
+                        </div>
+                        <div class="btn_sb"><a href="#"><img src="../common/images/btn_sb.png" width="156" alt="" /></a></div>
+                        <div class="link_sb">
+                        	<ul>
+                            	<li><a href="#">New member</a></li>
+                                <li><a href="#">Modify reservation</a></li>
+                                <li><a href="#">Confirm/cancel reservation that begin in TY</a></li>
+                            </ul>
+                        </div>
+                        <div class="img_sb"><img src="../common/images/sb_img_01.jpg" width="107" alt="" /></div>                       
+                     </div>
+                </div>
+                <!--<div class="box bx_02">
+                	 <div class="tit_sb"><img src="../common/images/sb_tit_02.png" alt="" width="94"/></div>
+                     <div class="inner_sb">
+                     	<ul>
+                        	<li>
+                            	<p class="date">2016年0月00日 (月)</p>
+                                <a href="#">お知らせ内容が入ります。</a>
+                            </li>
+                            <li>
+                            	<p class="date">2016年0月00日 (月)</p>
+                                <a href="#">お知らせ内容が入ります。</a>
+                            </li>
+                            <li>
+                            	<p class="date">2016年0月00日 (月)</p>
+                                <a href="#">お知らせ内容が入ります。</a>
+                            </li>
+                            <li>
+                            	<p class="date">2016年0月00日 (月)</p>
+                                <a href="#">お知らせ内容が入ります。</a>
+                            </li>
+                            <li class="more">
+                            	<a href="#">一覧</a>
+                            </li> 
+                        </ul>
+                     </div>
+                </div>-->
+            </div><!--sidebar-->
+            </div>
+            </div>
+            <div class="clear"></div>            
+        </div>
+		<!-- /SLIDE TOP -->	
+        <!-- NEWS -->	
+         
+    </div>
+    <!-- /CONTAINER -->
+    <div class="clear"></div> 
+    <!-- FOOTER -->
+    <div id="footer">    	
+            <div class="ft_01">
+            	<div class="content">
+            		<div class="logo_ft"><a href="#"><img src="../common/images/ft_01.jpg" class="img480" alt="" /></a></div>
+                    <div id="pagetop"><a href="#wrapper">Back to top</a></div>
+                    <div id="link_sp"><a href="#link_book"><img src="../common/images/btn_sp_link.png" width="60" alt="" /></a></div>
+                    <div class="clear"></div>
+                </div>
+             </div> 
+            <div class="ft_02">
+            	<div class="content">
+                	<div class="img_01">
+                		<a href="#"><img src="../common/images/ft_02.png" width="157" alt="" /></a>
+                    </div>
+                    <div class="list_02">
+                    	<ul>
+                        	<li><a href="../top.html">Home</a></li>
+                            <li><a href="#">Info list</a></li>
+                            <li><a href="#">Staying conditions</a></li>
+                            <li><a href="#"> Terms of Use</a></li>
+                            <li><a href="#">Privacy</a></li> 
+                            <li><a href="../../faq/">Japanese</a></li>
+                        </ul>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>         
+	</div> 
+    <!-- /FOOTER -->  
+   <!-- <div class="bnt_bt_sp">
+    	<ul>
+        	<li><a href="#">Home</a></li>
+            <li><a href="#">English</a></li>
+            <li><a href="#">Japanese</a></li>
+            <li class="tel"><img src="../common/images/sp_btn_tel.jpg" width="79" alt="" /></li>
+        </ul>
+    </div>-->     
+</div>
+</body>
+</html>

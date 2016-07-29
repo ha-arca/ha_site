@@ -1,0 +1,14 @@
+@charset "UTF-8";
+/* CSS Document */ 
+
+.inner .cont_row{margin-bottom:20px}
+.ml55{margin-left:55px}
+.ml42 {margin-left:42px}
+ 
+ @media only screen and (max-width:1500px){	
+ 
+ }
+
+ @media only screen and (max-width:960px){	
+ 
+ }

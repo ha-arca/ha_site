@@ -1,0 +1,68 @@
+@charset "UTF-8";
+/* CSS Document */ 
+
+ 
+
+/*index*/
+#header3 { position: fixed; top: 0; width: 100%; z-index: 9999;}
+.bg_03 { background:url(../../images/bg_hd_top.png) repeat; width: 100%;}
+.bg_03 h1{text-align:center;padding:20px 0}
+.cont_top{width:100%; position:relative;}
+.cont_top .box_01 img{width:100%}
+.sidebar1{background:url(../../images/bg_btn.png) repeat;position:fixed;right:0 !important;top:0;z-index:9998;width:30% !important;display:none}
+.sidebar1 img {width:50% !important;padding:10% 0 10% 25%;}
+.cont_top li{display:none}
+.img_sp{display:none}
+#footer1{width:100%;float:left;position:fixed;bottom:0;z-index:10000}
+
+#footer1 .ft_02 { background: url("../images/bg_02.jpg") repeat scroll center top;font-size:12px}
+#footer1 .ft_02 .img_01 { float: left; width: 157px;}
+#footer1 .ft_02 .list_02 { float: right; margin-top: 6px; width: 630px;}
+#footer1 .ft_02 .list_02 li { background: url("../images/jal_160222_09.png") no-repeat scroll left center; float: left; margin-left: 10px;}
+#footer1 .ft_02 .list_02 li a { color: #fff; padding-left: 14px;}
+#footer1 .ft_02 .list_02 li a:hover { color: #dc1a25;}
+.btn_click,.btn_click1{position:absolute;top:5%;right:5%;z-index:9999}
+.btn_click img , .btn_click1 img{width:auto !important ;max-width:100%}
+.btn_click1{display:none}
+.box_01 .fade_pc .slide{position:absolute; top:0; left:0; width:100%; height:100%;}
+.box_01 .fade_pc .slide.s1{background:url(../../images/map1.jpg) no-repeat ;background-size:100% auto; z-index:100;}
+.box_01 .fade_pc .slide.s2{background:url(../../images/map2.jpg) no-repeat ;background-size:100% auto; z-index:90;}
+.box_01 .fade_pc .slide.s2_1{background:url(../../images/map2_1.jpg) no-repeat ;background-size:100% auto; z-index:89;}
+.box_01 .fade_pc .slide.s3{background:url(../../images/map3.jpg) no-repeat ;background-size:100% auto; z-index:80;}
+.box_01 .fade_pc .slide.s4{background:url(../../images/map4.jpg) no-repeat ;background-size:100% auto; z-index:70;}
+.box_02{display:none}
+ 
+ @media only screen and (max-width:960px){	
+ 
+/*index*/
+
+#wrapper{padding-bottom:0;}
+.box_01 .sidebar1{background: rgba(0, 0, 0, 0) url("../../images/bg_btn.png") repeat scroll 0 0;}
+.img_sp{display:block}
+.fade_pc{height:auto;float:left;clear:both}
+.box_02{display:block;padding-bottom:103px;background:url(../../images/bg_btn.png) repeat}
+.box_02 a{text-align:center;float:left;width:40%;padding:5%} 
+.box_02 a img{width:auto;max-width:100%}
+
+.cont_top{height:auto !important;background:##474747}
+.box_01 .sidebar1{display:block !important;position:static;width:100% !important;height:auto !important;z-index:900;float:left}
+.sidebar1 a{width:50%;float:left}
+.cont_top .bx-wrapper{height:auto !important}
+.cont_top .bx-viewport{overflow:auto !important;height:auto }
+.sl4{padding-bottom:40px}
+.cont_top .box_01 .sidebar1 img{width:auto !important;max-width:70% !important;padding-left:15%}
+#footer1 .ft_02 .list_02 {width:100%}
+
+ }
+@media only screen and (max-width:640px){
+.cont_top{}
+.box_02 a{width:40%;padding:5%} 
+.bg_03 h1{padding:0 0 10px 0}
+ }
+ @media only screen and (max-width:480px){
+.box_02 a{width:60%;padding: 0 15% 4% 20%} 
+.btn_click img,.btn_click1 img{width:80% !important}
+.sidebar1 a{width:100%;text-align:center} 
+.cont_top .box_01 .sidebar1 img{max-width:60%;padding:20px 0 !important}
+ }
+ 

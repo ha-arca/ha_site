@@ -1,0 +1,293 @@
+@charset "UTF-8";
+
+/* CSS Document */
+
+.spOnly {
+    display: none;
+}
+
+.shuttlebus .row_01:after,
+.qrInfo:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.shuttlebus .row_01 {
+    -webkit-box-shadow: 0 1px 6px 0 rgba(50, 50, 50, .5);
+    -moz-box-shadow: 0 1px 6px 0 rgba(50, 50, 50, .5);
+    box-shadow: 0 1px 6px 0 rgba(50, 50, 50, .5);
+    padding: 10px;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.shuttlebus .row_01 ul.btn,
+.shuttlebus .row_01 ul.mnuSbus {
+    width: 100%;
+    display: table;
+    border-spacing: ;
+}
+
+.shuttlebus .row_01 ul.btn li,
+.shuttlebus .row_01 ul.mnuSbus li {
+    float: left;
+    width: 33%;
+}
+
+.shuttlebus .row_01 ul.btn li:nth-child(n+2) {
+    margin-left: 0.5%;
+}
+
+.shuttlebus .row_01 ul.btn li a {
+    display: block;
+    background: #ddd;
+    text-align: center;
+    line-height: 1em;
+    width: 100%;
+    padding: 12px 0;
+}
+
+.shuttlebus .row_01 ul.btn li a:hover {
+    background: #333;
+    color: #fff;
+}
+
+.shuttlebus .row_01 ul.btn li a span {
+    display: block;
+    font-size: 10px;
+    width: 100%;
+    padding-top: 2px;
+    line-height: 1em;
+}
+
+.shuttlebus .row_01 h2 {
+    font-size: 16px;
+    line-height: 2em;
+}
+
+.shuttlebus .row_01 h2 span.label {
+    background: red;
+    color: #fff;
+    display: inline-block;
+    padding: 0 10px;
+    margin-right: 10px;
+	font-size:11px;
+}
+
+.attention {
+    color: red;
+    display: block;
+    font-size: 12px;
+}
+
+span.attention {
+    margin-top: -25px;
+    text-align: right;
+}
+
+
+/*----------
+QRコード
+----------*/
+
+.qrInfo {
+    border: 3px solid #ccc;
+    padding: 10px;
+    margin: 20px auto 10px;
+}
+
+.qrInfo .qr {
+    float: right;
+    width: 14%;
+}
+
+.qrInfo .txt {
+    float: left;
+    width: 85%;
+}
+
+.qrInfo .txt h4 {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 5px 0 10px;
+}
+
+
+/*----------
+table
+----------*/
+
+.shuttlebus .row_01 table {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+.shuttlebus .row_01 tr.bg {
+    background: #ececec;
+}
+
+.shuttlebus .row_01 th,
+.shuttlebus .row_01 td {
+    text-align: center;
+    width: 25%;
+}
+
+.shuttlebus .row_01 th:nth-child(n+2),
+.shuttlebus .row_01 td:nth-child(n+2) {
+    border-left: 1px solid #ccc;
+}
+
+.shuttlebus .row_01 th {
+    background: #1a6881;
+    color: #fff;
+    text-align: left;
+    padding: 10px;
+}
+
+.shuttlebus .row_01 th:nth-child(-n+3) {
+    background-image: url(../../shuttlebus/images/tri.png);
+    background-repeat: no-repeat;
+    background-position: 95% 50%;
+    background-size: 7%;
+    padding-right: 6%;
+}
+
+.shuttlebus .row_01 th span {
+    font-size: 10px;
+    text-align: left;
+}
+
+.shuttlebus .row_01 td {
+    border-top: 1px solid #ccc;
+    line-height: 2.5em;
+}
+
+ul.attention-point {
+    background: ;
+}
+
+ul.attention-point li {
+    line-height: 2em;
+    padding-left: 30px;
+    background: url(../../shuttlebus/images/mark_1.png) no-repeat;
+    background-position: 10px 10px;
+}
+
+
+/*----------
+ページトップへ
+----------*/
+
+.shuttlebus #pagetop {
+    float: right;
+    padding-top: 10px;
+    width: 112px;
+}
+
+.shuttlebus #pagetop a {
+    background: url(../images/jal_160222_09.png) no-repeat left 5px;
+    padding-left: 10px;
+    font-family: "Hiragino Mincho ProN";
+}
+
+.row_01 h3 {
+    color: #ce0000;
+    display: block;
+    border-bottom: 1px solid #777;
+    font-size: 24px;
+    line-height: 1.5em;
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+
+
+/*----------
+タブ
+----------*/
+
+ul.tab-menu {
+    width: 100%;
+}
+
+ul.tab-menu:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+ul.tab-menu li {
+    font-size: 13px;
+    display: block;
+    font-weight: bold;
+    float: left;
+    text-align: center;
+    width: 33%;
+    margin: 0;
+    padding: 10px 0;
+}
+
+ul.tab-menu li:nth-child(n+2) {
+    margin-left: 0.5%;
+}
+
+.tabc {
+    background: #ffdbdb;
+    padding: 20px 0;
+    width: 100%;
+}
+
+.tabc img {
+    display: block;
+    width: auto;
+    margin: 0 auto;
+}
+
+
+/*----------
+レスポンシブ
+----------*/
+
+@media only screen and (max-width:1500px) {}
+
+
+/*max1500px*/
+
+@media only screen and (max-width:960px) {}
+
+
+/*max960px*/
+
+@media only screen and (max-width:640px) {
+    span.attention {
+        display: inline;
+        margin-top: 0;
+    }
+}
+
+
+/*max640px*/
+
+@media only screen and (max-width:480px) {
+    .spOnly {
+        display: block;
+    }
+    .qrInfo .txt,
+    .qrInfo .qr {
+        display: block;
+        float: none;
+        width: auto;
+        margin: auto;
+    }
+    .qrInfo .txt h4 {
+        text-align: center;
+    }
+	/*add 2016-06-27*/
+	.shuttlebus .row_01 th:nth-child(-n+3){ padding:0; background-image:none;}
+	.shuttlebus .row_01 table{ font-size:12px;}
+	.shuttlebus .row_01 th{ padding: 5px !important;}
+}
+
+
+/*max480px*/

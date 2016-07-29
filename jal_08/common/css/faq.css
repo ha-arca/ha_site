@@ -1,0 +1,26 @@
+@charset "UTF-8";
+/* CSS Document */ 
+.faq .tit{ margin-bottom:40px;}
+.faq .quest { background:url(../../faq/images/ic_01.png) no-repeat 95% 50%;}
+.faq .slc {background:url(../../faq/images/ic_02.png) no-repeat 95% 50%;}
+.faq .quest h3 {
+    background: transparent url(../../faq/images/q.gif) no-repeat scroll left center;
+    padding: 20px 50px 20px 83px; font-size:18px; font-weight: bold;cursor: pointer; margin-bottom:20px;
+	-webkit-box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.35);
+-moz-box-shadow:    0px 5px 5px 0px rgba(50, 50, 50, 0.35);
+box-shadow:         0px 5px 5px 0px rgba(50, 50, 50, 0.35);
+}
+.faq .hide { padding:0px 0 30px;}
+
+ @media only screen and (max-width:1500px){	
+ 
+ }
+
+ @media only screen and (max-width:960px){	
+ }
+ @media only screen and (max-width:640px){	
+ 
+.faq .quest h3{font-size:14px;min-height: 35px; padding: 10px 50px 13px 83px;}
+}
+ @media only screen and (max-width:480px){	
+ }

@@ -1,0 +1,225 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link rel="icon" href="">
+<title></title>
+<script language="javascript" type="text/javascript" src="common/js/jquery.js" /></script>
+<script language="javascript" type="text/javascript" src="common/js/jquery.bxslider.min.js" /></script>
+<script language="javascript" type="text/javascript" src="common/js/common.js" /></script>
+<script language="javascript" type="text/javascript" src="common/js/index_slide.js" /></script>
+<link rel="stylesheet" type="text/css" href="common/css/default.css" />
+<link rel="stylesheet" type="text/css" href="common/css/common.css" />
+<link rel="stylesheet" type="text/css" href="common/css/index.css" />
+<script>
+ 
+$(window).load(function() {
+	var skip=false;
+ 	step1();
+	function step1(){
+		$('.s1').fadeIn(1000,function(){
+			$('.s2').fadeIn(2000,function(){
+				$('.s1').delay(1500).fadeOut(2000,function(){		
+			 		if(!skip){
+						step2();
+					}
+				});
+			});
+		});
+	}
+	function step2(){
+		$('.s2_1').fadeIn(2000,function(){ 
+			$('.s2').delay(1500).fadeOut(2000,function(){
+				if(!skip){
+					step2_1();
+				}
+			});
+		});
+	}
+	
+	function step2_1(){
+		$('.s3').fadeIn(2000,function(){ 
+			$('.s2_1').delay(2500).fadeOut(1000,function(){
+				if(!skip){
+					step3();
+				}
+			});
+		});
+	}
+	function step3(){
+		$('.s4').fadeIn(2000,function(){ 
+			$('.s3').delay(2500).fadeOut(1000,function(){
+				if(!skip){
+					step4();
+				}
+			});
+		});
+	}
+	function step4(){
+		$('.s5').fadeIn(2500,function(){ 
+			$('.btn_click1').show();
+			$('.btn_click').hide();
+		});
+	}
+	 
+	$('.btn_click').click(function(){	
+		skip=true;	 
+		$('.btn_click1').show();
+		$('.btn_click').hide();
+		$('.s1').css({'display':'none'});
+		$('.s2').css({'display':'none'});
+		$('.s2_1').css({'display':'none'});
+		$('.s3').css({'display':'none'});
+		$('.s4').css({'display':'block','z-index':999});
+		$('.s5').css({'display':'block'}); 
+		return false;
+	});
+	
+	$('.btn_click1').click(function(){	
+		skip=false;
+		$('.btn_click').show();
+		$('.btn_click1').hide();
+		$('.s5').css({'display':'none'}); 
+		$('.s4').css({'display':'none','z-index':70}); 
+		$('.s3').css({'display':'none'}); 
+		$('.s2_1').css({'display':'none'}); 
+		$('.s2').css({'display':'none'});
+		$('.s1').fadeIn(500, function(){
+			step1();
+		});
+		return false;
+	});
+	
+});
+</script>
+ 
+<script>
+$(window).load(function () {
+	var headerH = $('#header3').height();
+	var ftH = $('.ft_02').height();		
+	 var windH = $(window).height();
+	 var winW = $(window).width();
+	 var liH = $('.fade_pc li').height();
+	 var ft_sp_H = $('#footer1').height();
+	 var img_sp_H = $('.img_sp').height();
+	 
+	$('.img_sp').css({'padding-top':0  + 'px'});	
+	
+	$('.bx-wrapper').css({'height':windH - ftH + 'px'});
+	$('.box_01 .bx-viewport').css({'height':windH - ftH + 'px'})
+	if( winW > 961){
+		$('.fade_pc .slide').css({'height':windH + 'px'});
+		$('.sidebar1').css({'padding-top':headerH + 'px','height':windH - ftH + 'px'});
+		$('.cont_top').css({'height':windH - ftH + 'px'});
+	}else{
+		$('.fade_pc .slide').css({'height':'img_sp_H'});
+		$('.sidebar1').css({'padding-bottom':ft_sp_H + 'px','padding-top':headerH + 'px' });
+	    $('.cont_top').css({'height':'auto'});			  
+	    $('.slide ').css({'top': headerH + 'px'});
+	    $('#wrapper ').css({'height': windH + 'px'});
+	    $('.btn_click').css({'top':headerH +10 + 'px'});
+	    $('.btn_click1').css({'top':headerH +10 + 'px'});
+		
+		}
+});
+
+</script>
+
+ 
+
+</head>
+<body>
+<div id="wrapper">
+    <!-- HEADER -->
+    <div id="header3">
+      <div class="bg_03">
+        <div class="head_top p2">
+        	<h1><a href="index.html"><img src="images/logo.png" width="166" alt="" /></a></h1>
+             
+             
+        </div>
+        <div class="clear"></div>
+      </div>
+         
+        <div class="clear"></div> 
+    </div>
+    <!-- /HEADER -->
+    <div class="cont_top">
+    	 
+    	<div class="box_01"> 
+        	 <div class="img_sp"><img src="images/map00.png" width="100%" alt="" /></div>             	
+                 <div class="fade_pc">
+                      <div class="slide s1"></div>
+                      <div class="slide s2"></div>
+                      <div class="slide s2_1"></div>
+                      <div class="slide s3"></div>
+                      <div class="slide s4"></div>                
+                </div>
+            <div class="s5 sidebar1">                         
+                <a href="top.html"> <img src="images/logo_02.png" width="" alt=""  /></a>
+                <a href="top.html"> <img src="images/logo_03.png" width="" alt=""  /></a>
+                <div class="clear"></div>
+                           
+            </div>
+            <div class="btn_click"><a ><img src="images/t_btn_skip.png" width="119" alt="skip" /></a></div>
+            <div class="btn_click1"><a ><img src="images/t_btn_replay.png" width="119" alt="replay" /></a></div> 
+         </div>
+          
+         <!--<div class="box_02">
+         	<div class="bx_sp">
+            	<ul class="bxslider2">
+                	<li class="sl1"><img src="images/map1.jpg" /></li>
+                    <li class="sl2"><img src="images/map2.jpg" /></li>
+                    <li class="sl3"><img src="images/map3.jpg" /></li>
+                    <li class="sl4"><img src="images/map4.jpg" /></li>
+                    <div class="clear"></div>                 
+                </ul>
+            </div>
+            <div class="btn_sp">
+            	<a href="top.html"><img src="images/logo_02.png" width="" alt=""  /></a>
+                <a href="top.html"> <img src="images/logo_03.png" width="" alt=""  /></a>
+                <div class="clear"></div>            	
+            </div>
+         </div>-->
+          
+    </div> 
+    <!-- /cont_top -->
+    
+    
+    <!-- FOOTER -->
+    <div id="footer1">    	
+             
+            <div class="ft_02">
+            	<div class="content">
+                	<div class="img_01">
+                		<a href="#"><img src="common/images/ft_02.png" width="157" alt="" /></a>
+                    </div>
+                    <div class="list_02">
+                    	<ul>
+                        	<li><a href="top.html">ホーム</a></li>
+                            <li><a href="#">お知らせ一覧</a></li>
+                            <li><a href="#">宿泊約款</a></li>
+                            <li><a href="#">ご利用規則</a></li>
+                            <li><a href="#">個人情報保護方針</a></li>                             
+                            <li><a href="english/">English</a></li>
+                        </ul>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>         
+	</div> 
+    <!-- /FOOTER -->  
+   <!-- <div class="bnt_bt_sp">
+    	<ul>
+        	<li><a href="#">ホーム</a></li>
+            <li><a href="#">English</a></li>
+            <li><a href="#">日本語</a></li>
+            <li class="tel"><img src="common/images/sp_btn_tel.jpg" width="79" alt="" /></li>
+        </ul>
+    </div>-->     
+</div>
+</body>
+</html>
