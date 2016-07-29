@@ -1,0 +1,45 @@
+@charset "UTF-8";
+/* CSS Document */
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td{margin:0; padding:0;}
+html{
+	overflow-y: scroll;
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	font-size: 12px;
+	color: #000;
+	line-height: 160%;
+	word-spacing: 0.2em;
+}
+h1, h2, h3, h4, h5, h6{font-size:100%; font-weight:normal;}
+ol, ul{list-style:none;}
+fieldset, img{border:0;}
+table{border-collapse:collapse; border-spacing:0;}
+caption, th{text-align:left; font-weight:normal;}
+img{vertical-align:bottom;}
+a{text-decoration:none; color:inherit;}
+
+/*===============================
+			 Other
+================================*/
+.clear{clear:both;}
+.fl{float:left;}
+.fr{float:right;}
+.right{text-align:right;}
+/*===============================
+			 MEDIA
+================================*/
+@media only screen and (max-width:960px){
+img, embed, object, video, iframe{max-width:100%;}
+html{-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;-moz-text-size-adjust: 100%;}
+}
+
+
+
+
+
+
+
+
+
+
+
+

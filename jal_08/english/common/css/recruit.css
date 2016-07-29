@@ -1,0 +1,61 @@
+@charset "UTF-8";
+/* CSS Document */ 
+
+.recruit .bx_txt{margin-bottom:30px}
+.recruit .tit_f14{margin-bottom:8px}
+.inner .cont_row{margin-bottom:20px}
+.recruit .link_01{margin-bottom:40px}
+.recruit li{float:left;margin-right:40px;margin-bottom:5px} 
+.recruit li a{background:url(../../recruit/images/icon_01.gif) no-repeat left 6px;font-weight:bold;padding:3px 0 3px 15px}
+
+.recruit .row{margin-bottom:70px}
+.recruit .box_01{padding:15px}
+.recruit .box_01 .cont{text-align:center}
+.recruit .box_01 .tit_bx_01{font-size:24px;margin:10px 0 25px 0;font-weight:bold; text-align:center;}
+.recruit .box_01 .cap_bx{font-size:12px;text-align:right;margin-top:10px}
+.recruit .bx_tbl{margin:20px 0}
+table.tbl_02{width:100%;}
+table.tbl_02 th{ background:#ab0000;border:1px solid #bfbfbf;padding:10px 0 10px 10px;color:#fff}
+table.tbl_02 td{ border:1px solid #bfbfbf;padding:10px 10px 10px 10px}
+table.tbl_02 .hidden{display:none} 
+
+table.tbl_03{width:100%;}
+table.tbl_03 th{ background:#ab0000;border:1px solid #bfbfbf;padding:10px 0 10px 10px;color:#fff}
+table.tbl_03 td{ border:1px solid #bfbfbf;padding:10px 10px 10px 10px}
+table.tbl_03 .hidden{display:none}
+
+
+
+
+ 
+ @media only screen and (max-width:960px){	
+ 
+ 
+ }
+ @media only screen and (max-width:640px){
+.recruit .row {margin-bottom:40px}
+
+.recruit .box_01 .tit_bx_01{font-size:20px}
+
+
+/* Force table to not be like tables anymore */
+table.tbl_02 th{display:none}
+table.tbl_02 .hidden{display:block; padding-top:10px;}
+table.tbl_02 .off{display: none}
+table.tbl_02 td{padding-left:50%;margin-bottom:1px;background:#F7F7F7}
+table.tbl_02, thead, tbody,.tbl_02 th,.tbl_02 td,.tbl_02 tr {display: block; }
+.tbl_02 thead tr { position: absolute; top: -9999px;left: -9999px; }	
+.tbl_02 td {border: none; position: relative; padding-left: 50%; }
+.tbl_02 td:before {	position: absolute;	top: 6px; left: 6px; width: 45%; padding-right: 10px; white-space: nowrap;	color:#B5131B;}
+.tbl_02 td:nth-of-type(1):before { content: "Department"; }
+.tbl_02 td:nth-of-type(2):before { content: "Section"; }
+.tbl_02 td:nth-of-type(3):before { content: "Position summary/\atalent profile"; white-space:pre; }
+
+/*add 2016-06-27*/
+table.tbl_02 td:last-child{ padding-bottom:20px;}
+/*table_03*/
+ 
+		 
+	
+
+ }

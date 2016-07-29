@@ -1,0 +1,481 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link rel="icon" href="">
+<title></title>
+<script language="javascript" type="text/javascript" src="../common/js/jquery.js" /></script>
+<script language="javascript" type="text/javascript" src="../common/js/jquery-ui.min.js" /></script>
+<script language="javascript" type="text/javascript" src="../common/js/common.js" /></script>
+<link rel="stylesheet" type="text/css" href="../common/css/default.css" />
+<link rel="stylesheet" type="text/css" href="../common/css/common.css" />
+<link rel="stylesheet" type="text/css" href="../common/css/faq.css" />
+
+<script language="javascript" type="text/javascript" src="../common/js/jquery.scrollFollow.js" /></script>
+<script type="text/javascript">
+	$(document).ready( function (){
+			$('a[href^=#]').click(function() {
+			  var speed = 600;// ミリ秒
+			  var href= $(this).attr("href");
+			  var target = $(href == "#" || href == "" ? 'html' : href);
+			  var position = target.offset().top - 147;
+			  
+				var body = 'body, html';
+				if (navigator.userAgent.match(/MSIE/)) {
+				    /*IE6.7.8.9.10*/
+				    body = 'html';
+				}
+				$(body).animate({scrollTop:position}, speed, 'swing');
+			  return false;
+			});
+			$('.reserv').scrollFollow( {
+				speed: 1000,				
+				offset: 177
+			} );				
+		    $(".quest").click(
+		    	function(){
+		    		$(this).next().stop().animate({height: "toggle", display: "block"},300);
+		    		$(this).toggleClass("slc");
+		    		$(window).resize();
+		    	},
+		    	function(){		    		
+		    		$(this).next().stop().animate({height: "toggle", display: "none"},300);
+		    		$(this).toggleClass("slc");
+		    		$(window).resize();
+		    	}		    	
+		    );
+			$('.hide').toggle();
+
+		});	 
+		function hdPdown(){
+		  hdSelect = document.hdForm.hdPmenu.selectedIndex;
+		  if(document.hdForm.hdPmenu.options[hdSelect].value !=""){
+		      window.open(document.hdForm.hdPmenu.options[hdSelect].value);
+		  }
+		  return false;
+		}
+</script>
+</head>
+<body>
+<div id="wrapper">
+    <!-- HEADER -->
+    <div id="header2">
+      <div class="bg_02">
+        <div class="head_top p2">
+        	<h1><a href="../top.html"><img src="../common/images/logo_03.png" alt="" class="spChange"/></a></h1>
+            <div class="menu_top_01">
+            	<ul>
+                	<li><a href="../room/">客室</a></li>
+                    <li><a href="../plan/">宿泊プラン</a></li>
+                    <li><a href="../lounge/">ラウンジ</a></li>
+                    <li><a href="../facility/">館内・施設案内</a></li>
+                    <li><a href="../shuttlebus/">無料シャトルバス</a></li>
+                    <li><a href="../access/">アクセス</a></li>
+                    <li class="off">観光スポット </li>
+                    <li class="off">電子パンフレット </li>
+                    <li><a href="../recruit/">採用情報</a></li>
+                    <div class="clear"></div>
+                </ul>
+            </div>
+            <!-- SP - MENU -->
+                <div id="menu">
+                	<div class="bg_btn_menu">
+                        <div id="btn_menu">
+                            <span class="cl_01"></span><span class="cl_01"></span><span class="cl_01"></span><span class="cl_01">menu</span>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                    <ul class="menu_top_01 color_02 bg_p2">                
+                        	<li><a href="../room/">客室</a></li>
+                            <li><a href="../plan/">宿泊プラン</a></li>
+                            <li><a href="../lounge/">ラウンジ</a></li>
+                            <li><a href="../facility/">館内・施設案内</a></li>
+                            <li><a href="../shuttlebus/">無料シャトルバス</a></li>
+                            <li><a href="../access/">アクセス</a></li>
+                            <li class="off">観光スポット </li>
+                            <li class="off">電子パンフレット </li>
+                            <li><a href="../recruit/">採用情報</a></li>
+                        <div class="clear"></div>
+                        <div class="line_01"></div>
+                    </ul>
+                    <div class="clear"></div>
+                    <div class="clear"></div>
+                </div>
+                <!-- /SP - MENU -->
+        </div>
+        <div class="clear"></div>
+        </div>
+        <div class="menu_02">
+        	<div class="cont_m2">
+                <ul class="list">
+                    <li><a href="../top.html">ホーム</a></li>
+                    <li><a href="../english/faq/">English</a></li>
+                    <li><a href="#">日本語</a></li>
+                    <li  class="fix_menu_01 active"><a>よくあるご質問</a></li>
+                    <li class="img_01"><a href="#"><img src="../common/images/menu_02.png" width="295" alt="" /></a></li>
+                </ul>   
+                <div class="clear"></div> 
+            </div>       
+        </div>
+    </div>
+    <!-- /HEADER -->
+    <!-- CONTAINER -->
+    <div id="container_page">
+		<!-- SLIDE TOP -->
+        <div id="slidetop_01">
+        	
+        </div>
+        <div class="content">
+        	<div id="main" class="main"><!--main-->
+            <div class="inner faq">
+            	<div class="tit_01">
+                    <div class="ct_tit">
+                        <h2>よくあるご質問</h2>
+                        <p>faq</p>                          
+                    </div>
+                </div>
+            	
+                <div class="box1">
+                	<div class="tit"><p>お客様からお問い合わせの多い内容をまとめています。</p></div>
+                    <div class="quest">
+                    	<h3>羽田空港バス乗り場はどこですか?</h3> </div>
+                    <div class="hide Darticle">第1ターミナル、第2ターミナル、新国際線それぞれにお迎えに伺います。
+                        <br /> 時刻、送迎場所は「<a href="/shuttle_bus/" target="_blank">無料シャトルバス</a>」ご確認下さい。</div>
+                    <div class="quest">
+                        <h3>最寄の駅を教えてください。</h3> </div>
+                    <div class="hide Darticle">京浜急行「穴守稲荷駅」徒歩約3分、東京モノレール「天空橋駅」徒歩約10分。
+                        <br /> ※フロントにて時刻表をご用意しております。</div>
+                    <div class="quest">
+                        <h3>近くにコンビニエンスストアはありますか?</h3> </div>
+                    <div class="hide Darticle">サークルKサンクス　ホテル前
+                        <br /> ローソン　徒歩約3分
+                        <br /> ファミリーマート　徒歩約3分
+                        <br /> セブンイレブン　徒歩約10分
+                        <br /> ※フロントにて近隣の地図をご用意しております。
+                        <br /> ※こちらか<a href="/access/" target="_self">周辺地図</a>もご利用ください。</div>
+                    <div class="quest">
+                        <h3>客室内でインターネットはつかえますか?</h3> </div>
+                    <div class="hide Darticle">全室高速LAN回線を完備しております。 ホテル施設まで光回線、客室まではVDSLを利用し理論値100Mの回線速度を誇ります。※LANケーブルは全室に備え付けてございます。
+                        <br /> また全館・全室Wi-Fi環境を完備しております。</div>
+                    <div class="quest">
+                        <h3>レイトチェックアウトのオーバーチャージについて</h3> </div>
+                    <div class="hide Darticle">以下のとおり、延長料金が発生致します。
+                        <br /> 超過3時間まで　　基本室料の30%
+                        <br /> 超過6時間まで　　基本室料の50%
+                        <br /> 超過6時間以上　　基本室料の100%(1泊分)</div>
+                    <div class="quest">
+                        <h3>キャンセルチャージについて</h3> </div>
+                    <div class="hide Darticle">ご利用室料を基準として以下のとおり、キャンセル料金が発生致します。
+                        <br /> 前日まで　　　　　20%
+                        <br /> 当日まで　　　　　80%
+                        <br /> 連絡無しの不泊　100%(1泊分
+                        <br /> ※団体様に関しましては別途規定にてキャンセル料金をご請求させていただく場合がございます。</div>
+                    <div class="quest">
+                        <h3>チェックイン及びチェックアウトについて</h3> </div>
+                    <div class="hide Darticle">チェックインは14:00からとなります。
+                        <br /> チェックアウトは11:00までとなります。
+                        <br /> (※プランによっては、無料延長可能な場合がございますのでお問い合わせ 下さい。)</div>
+                    <div class="quest">
+                        <h3>禁煙ルームについて</h3> </div>
+                    <div class="hide Darticle">禁煙ルームご希望の際は、ご予約時にお申し付け下さい。
+                        <br /> ※空室状況によりご希望に添えない場合がございますので ご了承下さいませ。</div>
+                    <div class="quest">
+                        <h3>駐車場について</h3> </div>
+                    <div class="hide Darticle">当ホテル駐車場はホテル敷地内に9台のコインパーキング「タイムス」のご利用となります。
+                        <br /> ※20分100円のところ、ご宿泊のお客様は14:00～翌朝11:00まで宿泊者割引料金の1泊1,500円でご利用頂けます。
+                        <br />
+                        <br /> <strong style="color:#F00;">「完全予約制」</strong>で承っております。ご利用の際は事前にホテルまでご連絡下さい。
+                        <br /> <span style="color:#F00;">※ホテル駐車場が満車の場合は近隣の駐車場のご利用となります。<br />
+                    その際の駐車場料金はご本人様払いとなります。</span>
+                        <br /> ※GW、クリスマス、年末年始、土曜、日曜、祝日等は大変込み合いますので公共の交通機関をご利用いただきますよう ご協力お願いいたします。
+                        <br />
+                        <br /> ※こちらから<a href="http://times-info.net/?rf=pc" target="_blank">コインパーキング「タイムス」</a>はご閲覧できますがご予約はホテルまでお電話にてご予約いただきますようおねがいいたします。
+                        <br />
+                        <br /> 駐車場ご予約電話番号:03-5735-2525</div>
+                    <div class="quest">
+                        <h3>宅配便荷物のお預かりについて</h3> </div>
+                    <div class="hide Darticle">宅配便につきましては、フロントにてお預かり致します。
+                        <br /> 事前発送をされる場合、ご宿泊日及び、氏名を必ず記載して下さい。 チェックインの際、お客様へお渡し致します。
+                        <br />
+                        <br /> またホテルからの発送については、随時承っております。
+                        <br /> ※ホテルでの宅配便は<a href="http://www.kuronekoyamato.co.jp/top.html" target="_blank">「クロネコヤマト宅配便サービス」</a>を承っております。
+                        <br /> 他の宅配業者ご希望のお客様は事前にホテルフロントまでお問い合わせください。</div>
+                    <div class="quest">
+                        <h3>3名様以上のお部屋のご利用について</h3> </div>
+                    <div class="hide Darticle">当ホテルは、最大2名様利用のお部屋(ダブルもしくはツイン)でのご案内となります。
+                        <br /> エキストラベット及びソファーベット等もご用意がございません。
+                        <br /> ※小さなお子様がいらっしゃる場合やその他添い寝等はご相談下さい。</div>
+                    <div class="quest">
+                        <h3>お忘れ物の問い合わせについて</h3> </div>
+                    <div class="hide Darticle">お客様のお忘れ物は、一定期間保管致しております。何かお心あたりがございましたら、ホテルまでお問い合わせ下さいませ。貴重品はホテル保管後、警察の遺失物に届けております。
+                        <br /> ※お客様のご期待に添えない場合がございますのでご了承下さい。</div>
+                    <div class="quest">
+                        <h3>お振り込み先のご案内</h3> </div>
+                    <div class="hide Darticle">事前のお振込みにつきましては、ホテルまでご連絡下さい。
+                        <br /> また、お振込み期限は<span style="color:#F00;">土日祝を除く、銀行営業日の宿泊日5日前までをお願いしております。</span>
+                        <br /> 間に合わないお客様は、銀行振り込みいただき振り込み確認書をホテルまでFAXしていただきますようお願いいたします。</div>
+                    <div class="quest">
+                        <h3>ご宿泊費お支払いについて</h3> </div>
+                    <div class="hide Darticle">当ホテルは、<span style="color:#F00;">羽田空港ホテルの特性上チェックイン時ご精算をお願いしております。</span > 早朝ご出発を円滑に進める為みなさまのご理解をいただきますようお願い申し上げます。</div>
+                                                    <div class="quest">
+                                        <h3>近くに飲食店はありますか?</h3>
+                                    </div>
+                                    <div class="hide Darticle">ホテル前の環状8号線を渡った場所に牛丼店と深夜2時まで営業のラーメン店が御座います。 昼時や夕方～21時頃までであれば、羽田ならではの魚介類を召し上がれる店舗もホテルフロントにてご案内できます。 飲食店をお問い合わせのお客様はホテルフロントまでお問い合わせください。</div>
+                </div>
+              	
+               
+               	<div class="clear"></div>
+                
+                
+            </div>
+            </div><!--main-->
+            
+            
+            <div id="sideWrap">
+            <div id="side">
+            <div class="sidebar fixnav">
+            	<div class="box bx_01">
+                	 <div class="pos_rel">
+                            <div class="pos_abs" id="link_book"></div>
+                    </div>
+                	 <div class="tit_sb"><img src="../common/images/sb_tit_01.png" alt="" width="100"/></div>
+                     <div class="inner_sb">
+                     	<div class="tit_sub">ご宿泊日</div>
+                        <div class="row_sb">                      
+                            <select>
+                                <option value="2016/03/01">2016年 03月</option>
+                                <option value="2016/04/01">2016年 04月</option>
+                                <option value="2016/05/01">2016年 05月</option>
+                                <option value="2016/06/01">2016年 06月</option>
+                                <option value="2016/07/01">2016年 07月</option>
+                                <option value="2016/08/01">2016年 08月</option>
+                            </select>
+                            <select>
+                                <option value="1">1日</option>
+                                <option value="2">2日</option>
+                                <option value="3">3日</option>
+                                <option value="4">4日</option>
+                                <option value="5">5日</option>
+                                <option value="6">6日</option>
+                                <option value="7">7日</option>
+                                <option value="8">8日</option>
+                                <option value="9">9日</option>
+                                <option value="10">10日</option>
+                                <option value="11">11日</option>
+                                <option value="12">12日</option>
+                                <option value="13">13日</option>
+                                <option value="14">14日</option>
+                                <option value="15">15日</option>
+                                <option value="16">16日</option>
+                                <option value="17">17日</option>
+                                <option value="18">18日</option>
+                                <option value="19">19日</option>
+                                <option value="20">20日</option>
+                                <option value="21">21日</option>
+                                <option value="22">22日</option>
+                                <option value="23">23日</option>
+                                <option value="24">24日</option>
+                                <option value="25">25日</option>
+                                <option value="26">26日</option>
+                                <option value="27">27日</option>
+                                <option value="28">28日</option>
+                                <option value="29">29日</option>
+                                <option value="30">30日</option>
+                                <option value="31">31日</option>
+                            </select>
+                             <a href="#"><img src="../common/images/icon_cal.gif" width="17" alt="" /></a>
+                        </div>
+                         
+                        <div class="row_sb">
+                        	<span>から</span>
+                            <select>
+                                <option value="1">1泊</option>
+                                <option value="2">2泊</option>
+                                <option value="3">3泊</option>
+                                <option value="4">4泊</option>
+                                <option value="5">5泊</option>
+                                <option value="6">6泊</option>
+                                <option value="7">7泊</option>
+                                <option value="8">8泊</option>
+                                <option value="9">9泊</option>
+                                <option value="10">10泊</option>
+                                <option value="11">11泊</option>
+                                <option value="12">12泊</option>
+                                <option value="13">13泊</option>
+                                <option value="14">14泊</option>
+                                <option value="15">15泊</option>
+                                <option value="16">16泊</option>
+                                <option value="17">17泊</option>
+                                <option value="18">18泊</option>
+                                <option value="19">19泊</option>
+                                <option value="20">20泊</option>
+                                <option value="21">21泊</option>
+                                <option value="22">22泊</option>
+                                <option value="23">23泊</option>
+                                <option value="24">24泊</option>
+                                <option value="25">25泊</option>
+                                <option value="26">26泊</option>
+                                <option value="27">27泊</option>
+                                <option value="28">28泊</option>
+                                <option value="29">29泊</option>
+                                <option value="30">30泊</option>
+                                <option value="31">31泊</option>
+                            </select>                            
+ 
+                        </div>
+                        <div class="row_sb">                      
+                            <select>
+                                <option value="2016/03/01">2016年 03月</option>
+                                <option value="2016/04/01">2016年 04月</option>
+                                <option value="2016/05/01">2016年 05月</option>
+                                <option value="2016/06/01">2016年 06月</option>
+                                <option value="2016/07/01">2016年 07月</option>
+                                <option value="2016/08/01">2016年 08月</option>
+                            </select>
+                            <select>
+                                <option value="1">1日</option>
+                                <option value="2">2日</option>
+                                <option value="3">3日</option>
+                                <option value="4">4日</option>
+                                <option value="5">5日</option>
+                                <option value="6">6日</option>
+                                <option value="7">7日</option>
+                                <option value="8">8日</option>
+                                <option value="9">9日</option>
+                                <option value="10">10日</option>
+                                <option value="11">11日</option>
+                                <option value="12">12日</option>
+                                <option value="13">13日</option>
+                                <option value="14">14日</option>
+                                <option value="15">15日</option>
+                                <option value="16">16日</option>
+                                <option value="17">17日</option>
+                                <option value="18">18日</option>
+                                <option value="19">19日</option>
+                                <option value="20">20日</option>
+                                <option value="21">21日</option>
+                                <option value="22">22日</option>
+                                <option value="23">23日</option>
+                                <option value="24">24日</option>
+                                <option value="25">25日</option>
+                                <option value="26">26日</option>
+                                <option value="27">27日</option>
+                                <option value="28">28日</option>
+                                <option value="29">29日</option>
+                                <option value="30">30日</option>
+                                <option value="31">31日</option>
+                            </select>
+                             <a href="#"><img src="../common/images/icon_cal.gif" width="17" alt="" /></a>
+                        </div>
+                        <div class="tit_sub">ご宿泊人数</div>
+                        <div class="row_sb">                        	
+                            <select>
+                                <option value="1">1名</option>
+                                <option value="2">2名</option>
+                                <option value="3">3名</option>
+                                <option value="4">4名</option>
+                                <option value="5">5名</option>
+                                <option value="6">6名</option>
+                                <option value="7">7名</option>
+                                <option value="8">8名</option>
+                                <option value="9">9名</option>
+                                <option value="10">10名</option>
+                            </select>
+                            <span>室</span>
+                        </div>
+                        <div class="tit_sub">部屋数</div>
+                        <div class="row_sb">                        	
+                            <select>
+                                <option value="1">1室</option>
+                                <option value="2">2室</option>
+                                <option value="3">3室</option>
+                                <option value="4">4室</option>
+                                <option value="5">5室</option>
+                                <option value="6">6室</option>
+                                <option value="7">7室</option>
+                                <option value="8">8室</option>
+                                <option value="9">9室</option>
+                                <option value="10">10室</option>                                 
+                            </select>                             
+                        </div>
+                        <div class="tit_sub">プラン選択</div>
+                        <div class="row_sb">                        	
+                            <select>
+                                <option selected="selected" value="1">すべてのプラン</option>
+                            </select>                             
+                        </div>
+                        <div class="tit_sub">検索方法</div>
+                        <div class="row_sb">                        	
+                            <input type="radio" name="" value="">宿泊プラン別<br>
+                            <input type="radio" name="" value="">部屋タイプ別<br>
+                           	<input type="radio" name="" value="">価格順に検索                             
+                        </div>
+                        <div class="btn_sb"><a href="#"><img src="../common/images/btn_sb.png" width="156" alt="" /></a></div>
+                        <div class="link_sb">
+                        	<ul>
+                            	<li><a href="#">新規会員登録</a></li>
+                                <li><a href="#">予約確認・変更・キャンセル</a></li>
+                                <li><a href="#">予約がTYから始まるお客様のご予約の確認・キャンセル</a></li>
+                                 
+                            </ul>
+                        </div>
+                        <div class="img_sb"><img src="../common/images/sb_img_01.jpg" width="107" alt="" /></div>
+                       
+                     </div>
+                </div>
+                 
+            </div><!--sidebar-->
+            </div>
+            </div>
+            <div class="clear"></div>            
+        </div>
+		<!-- /SLIDE TOP -->	
+        <!-- NEWS -->	
+         
+    </div>
+    <!-- /CONTAINER -->
+    <div class="clear"></div> 
+    <!-- FOOTER -->
+    <div id="footer">    	
+            <div class="ft_01">
+            	<div class="content">
+            		<div class="logo_ft"><a href="#"><img src="../common/images/ft_01.jpg" width="823" alt="" /></a></div>
+                    <div id="pagetop"><a href="#wrapper">ページトップへ</a></div>
+                    <div id="link_sp"><a href="#link_book"><img src="../common/images/btn_sp_link.png" width="60" alt="" /></a></div>
+                    <div class="clear"></div>
+                </div>
+             </div> 
+            <div class="ft_02">
+            	<div class="content">
+                	<div class="img_01">
+                		<a href="#"><img src="../common/images/ft_02.png" width="157" alt="" /></a>
+                    </div>
+                    <div class="list_02">
+                    	<ul>
+                        	<li><a href="../top.html">ホーム</a></li>
+                            <li><a href="#">お知らせ一覧</a></li>
+                            <li><a href="#">宿泊約款</a></li>
+                            <li><a href="#">ご利用規則</a></li>
+                            <li><a href="#">個人情報保護方針</a></li> 
+                            <li><a href="../english/faq/">English</a></li>
+                        </ul>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>         
+	</div> 
+    <!-- /FOOTER -->  
+   <!-- <div class="bnt_bt_sp">
+    	<ul>
+        	<li><a href="#">ホーム</a></li>
+            <li><a href="#">English</a></li>
+            <li><a href="#">日本語</a></li>
+            <li class="tel"><img src="../common/images/sp_btn_tel.jpg" width="79" alt="" /></li>
+        </ul>
+    </div>-->     
+</div>
+</body>
+</html>

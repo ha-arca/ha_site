@@ -1,0 +1,48 @@
+@charset "UTF-8";
+/* CSS Document */ 
+
+ 
+.facility {font-size:14px; line-height:1.7;}
+.facility .red{ color:#ce0000;}
+.facility .bold{ font-weight: bold; }
+.facility .cap{ font-size:12px;}
+
+.facility .box1 { margin-bottom:40px;}
+.facility .box1 .fr { width: 56.57142857142857%;}
+.facility .box1 .fl{ width:40%;}
+.facility .box1 .fl .box_01{ padding:20px 14px; margin-top:28px;}
+.facility .box1 .fl .box_01 .top { border-bottom:1px solid #ccc; padding-bottom:10px;}
+.facility .box1 .fl .box_01 .bottom {}
+.facility .box1 .wifi { margin-top:30px;}
+
+.facility .box2 { margin-bottom:40px;}
+/*facility .box2 table th { background-color:#ce0000; color:#fff; font-weight: bold;}
+.facility .box2 table tr, .facility .box2 table th{ border:1px solid #bfbfbf;}
+.facility .box2 table th, .facility .box2 table td { padding:15px;}
+.facility .box2 table ul li { margin-left:20px;}*/
+
+.facility .box3 .fl { width:220px; margin-right:20px;}
+
+
+ @media only screen and (max-width:1500px){	
+ 
+ }
+
+ @media only screen and (max-width:960px){	
+
+.facility .box1 .fr { width: 56.57142857142857%;}
+.facility .box1 .fl{ width:40%;}
+.facility .box1 .fl .box_01{ padding:2% 1.4%; margin-top:2.8%;}
+
+
+.facility .box3 .fl { width:31.42857142857143%; margin-right:2%;}
+ }
+ @media only screen and (max-width:640px){	
+/*.facility .box2 table th, .facility .box2 table td{padding:inherit} 
+.facility .box2 table tr, .facility .box2 table th{border:none}*/ 
+}
+ @media only screen and (max-width:480px){	
+.facility .box1 .fr, .facility .box1 .fl { width: 100%; float:none; margin:0 auto 20px;}
+.facility .box1 .fr { text-align:center;}
+.facility .box3 .fl { float:none; width:100%; text-align:center; margin:0 auto 20px;}
+ }
